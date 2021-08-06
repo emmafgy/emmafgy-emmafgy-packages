@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="./promise.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./promisev2.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body style="text-align: center;">
+		<h1>hello promise</h1>
+		<script type="text/javascript">
+			// case 1
+			new MyPromise(function(res,rej){
+				res(111111);
+			}).then(function(val){
+				alert(val)
+			})
+
+			// case 2
+			// new MyPromiseV2(function(resolve, reject) {
+
+			// 	setTimeout(_ => {
+			// 		resolve(2222);
+			// 		//reject('i am reject');
+			// 	}, 1000);
+
+			// }).then(function(val){
+			// 	alert(val)
+			// })
+
+			// let mypromise = new MyPromise(function(resolve, reject) {
+
+			// 	alert('进入promise==executor1');
+
+			// 	//  resolve(' immediately i am resolve ');
+
+			// 	setTimeout(_ => {
+			// 		alert('settimeout-1000');
+			// 		resolve('i am resolve');
+			// 		//reject('i am reject');
+			// 	}, 1000);
+
+			// });
+
+			// mypromise.then(value => {
+			// 	alert(`success === ${value}`);
+			// }, reason => {
+			// 	alert(`error === ${reason}`);
+			// })
+
+			// .then(value=>{
+			// 	alert(`then的链式--1 ${value}`)
+			// }).then(value=>{
+			// 	alert(`then的链式--2 ${value}`)
+			// })
+
+
+			// 1 - resolve 的  settimout
+			// 2 - then 的链式回调
+			// 3 - 状态的不可变
+		</script>
+	</body>
+</html>

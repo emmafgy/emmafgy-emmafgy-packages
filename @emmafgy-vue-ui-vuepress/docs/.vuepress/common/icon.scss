@@ -1,0 +1,13 @@
+.md-icon-wrapper{
+	cursor: pointer;
+	.md-icon-item{
+		
+		.md-icon{
+			transition: .5s;
+		}
+		
+		&:hover .md-icon{
+			transform: scale(1.7);
+		}
+	}
+}

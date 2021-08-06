@@ -1,0 +1,26 @@
+ @import "../common/css/common.scss";
+ //@import "base";
+ 
+ .ef-icon-wrapper{
+   display: inline-block;
+ }
+
+  .ef-icon {
+    font-size: $font-size-icon;
+    color: $primary-color;
+  }
+
+  @keyframes efSpin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+
+  }
+
+  .ef-icon-spin {
+    animation: efSpin 1.25s linear infinite;
+  }

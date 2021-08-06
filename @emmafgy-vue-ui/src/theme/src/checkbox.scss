@@ -1,0 +1,150 @@
+ @import "../common/css/common.scss";
+
+.disabled-label-container{
+  cursor: not-allowed !important;
+  input{
+    cursor: not-allowed !important;
+  }
+}
+
+.disabled-inner{
+  background-color: #f5f5f5 !important;
+  border-color: #d9d9d9 !important;
+}
+
+.disabled-span{
+  color: #d9d9d9 !important;
+}
+
+.ef-checkbox-label-container{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      color: rgba(0,0,0,.65);
+      font-size: 14px;
+      font-variant: tabular-nums;
+      line-height: 1.5;
+      list-style: none;
+      font-feature-settings: "tnum";
+      display: inline-block;
+      line-height: unset;
+      cursor: pointer;
+
+
+
+      .ef-checkbox-container{
+
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: rgba(0,0,0,.65);
+            font-size: 14px;
+            font-variant: tabular-nums;
+            line-height: 1.5;
+            list-style: none;
+            font-feature-settings: "tnum";
+            position: relative;
+            top: -.09em;
+            display: inline-block;
+            line-height: 1;
+            white-space: nowrap;
+            vertical-align: middle;
+            outline: none;
+            cursor: pointer;
+
+          input{
+                box-sizing: border-box;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                opacity: 0;
+          }
+
+
+          .ef-checkbox-inner{
+             position: relative;
+             top: 0;
+             left: 0;
+             display: block;
+             width: 16px;
+             height: 16px;
+             background-color: #fff;
+             border: 1px solid #d9d9d9;
+             border-radius: 2px;
+             border-collapse: separate;
+             transition: all .3s;
+
+
+             &.is-checked{
+               background-color: $primary-color;
+               border-color: $primary-color;
+
+               &::after{
+                    box-sizing: content-box;
+                    content: "";
+                    border: 2px solid #fff;
+                    border-left: 0;
+                    border-top: 0;
+                    height: 7px;
+                    top: 50%;
+                    left: 22%;
+                    position: absolute;
+                    // transform: rotate(  45deg  ) scaleY(1);
+                    transform: rotate(45deg) scale(1) translate(-50%,-50%);
+                    width: 3px;
+                    transition: transform .15s ease-in .05s;
+                    transform-origin: center;
+                 }
+
+             }
+
+             &.is-checked.half-checked{
+                background-color: #fff ;
+                border-color: #d9d9d9 ;
+
+                 &::after{
+                     top: 50%;
+                     left: 50%;
+                     width: 8px;
+                     height: 8px;
+                     background-color: $primary-color;
+                     border: 0;
+                     transform: translate(-50%,-50%) scale(1);
+                     opacity: 1;
+                     content: " ";
+               }
+
+             }
+
+             &.is-checked.disabled{
+               background-color: #f5f5f5 ;
+               border-color: #f5f5f5 ;
+               &::after{
+                    box-sizing: content-box;
+                    content: "";
+                    border: 2px solid #bbbbbb ;
+                    border-left: 0;
+                    border-top: 0;
+                    height: 7px;
+                    top: 50%;
+                    left: 22%;
+                    position: absolute;
+                    // transform: rotate(  45deg  ) scaleY(1);
+                    transform: rotate(45deg) scale(1) translate(-50%,-50%);
+                    width: 3px;
+                    transition: transform .15s ease-in .05s;
+                    transform-origin: center;
+                 }
+             }
+
+
+            }
+          }
+      }

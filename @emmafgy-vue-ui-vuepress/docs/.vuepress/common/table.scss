@@ -1,0 +1,20 @@
+.md-table-wrapper{
+	
+	th,td{
+		padding: unset;
+		border: unset;
+	}
+	
+	tr:nth-child(2n) {
+	    background-color: unset;
+	}
+	
+	tr{
+		border: unset;
+	}
+	
+	// table{
+	// 	margin: 0;
+	// }
+	
+}

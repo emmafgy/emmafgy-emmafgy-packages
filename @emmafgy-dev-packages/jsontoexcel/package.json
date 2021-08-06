@@ -1,0 +1,45 @@
+{
+  "_from": "@emmafgy/jsontoexcel",
+  "_id": "@emmafgy/jsontoexcel@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-WoxUq2zufKt7tAc8HVXjcuQpgShvXCtU8LpMv2gQ6s15T4rBnY9ASU9NGwbM8RtAmYkRrsDE5nHfeOmxMBqB/g==",
+  "_location": "/@emmafgy/jsontoexcel",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@emmafgy/jsontoexcel",
+    "name": "@emmafgy/jsontoexcel",
+    "escapedName": "@emmafgy%2fjsontoexcel",
+    "scope": "@emmafgy",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@emmafgy/jsontoexcel/-/jsontoexcel-1.0.2.tgz",
+  "_shasum": "854115e9024c1eb8032240515ae148bd7d759ab4",
+  "_spec": "@emmafgy/jsontoexcel",
+  "_where": "C:\\Users\\Administrator",
+  "author": {
+    "name": "emmafgy"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "json export excel",
+  "keywords": [
+    "js",
+    "excel",
+    "json"
+  ],
+  "license": "ISC",
+  "main": "myExportExcel.js",
+  "name": "@emmafgy/jsontoexcel",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.14"
+}

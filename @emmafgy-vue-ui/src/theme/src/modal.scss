@@ -1,0 +1,104 @@
+ @import "../common/css/common.scss";
+
+.ef-modal-wrapper{
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+
+
+  .inner{
+    // position: absolute;
+    // top: 15%;
+    // left: 50%;
+    // transform: translate(-50%,0);
+
+    display: inline-block;
+    margin: 5% auto;
+    // margin-bottom: 5%;
+    max-width: 90%;
+    // max-height: 70%;
+    // overflow: auto;
+
+    background-color: #FFF;
+    // padding: 32px;
+    // padding-bottom: 24px;
+
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px #25232326;
+    pointer-events: auto;
+    text-align: left;
+    min-width: 520px;
+
+      p{
+        margin: 0;
+      }
+
+
+
+      .header{
+        overflow: hidden;
+        color: rgba(0,0,0,.85);
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 16px 24px;
+        border-bottom: 1px solid #e8e8e8;
+        border-radius: 4px 4px 0 0;
+      }
+
+      .body{
+        padding: 24px;
+        line-height: 1.5;
+      }
+
+      .footer{
+          padding: 10px 16px;
+          background: transparent;
+          border-top: 1px solid #e8e8e8;
+          border-radius: 0 0 4px 4px;
+      }
+
+  }
+
+
+}
+
+
+.modalbox-fade-enter-active {
+  animation: modalbox-fade-in .3s;
+}
+
+.modalbox-fade-leave-active {
+  animation: modalbox-fade-out .3s;
+}
+
+@keyframes modalbox-fade-in {
+  0% {
+    transform: translate3d(0, -20px, 0) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes modalbox-fade-out {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+
+  }
+  100% {
+    transform: translate3d(0, -20px, 0) scale(0);
+    opacity: 0;
+  }
+}

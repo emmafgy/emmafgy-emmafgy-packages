@@ -1,0 +1,35 @@
+
+/* html,
+body {
+	height: 100%;
+	background-color: #fff ;
+	overflow: auto;
+	min-width: 900px;
+} */
+
+.theme-default-content:not(.custom) {
+    max-width: 1000px !important;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+	width: 11px;
+	height: 11px;
+	background-color: #f1f1f1;
+}
+
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	opacity: 0;
+	background: transparent;
+}
+
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	width: 8px;
+	background: #c1c1c1;
+}

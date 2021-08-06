@@ -1,0 +1,16 @@
+{
+  "name": "@emmafgy/base64",
+  "version": "1.0.3",
+  "description": "js base64 decode encode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "base64",
+    "decode",
+    "encode"
+  ],
+  "author": "@emmafgy",
+  "license": "ISC"
+}
