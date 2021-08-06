@@ -26,11 +26,11 @@
         </span>
       </a-table>
     </div> -->
-    <div class="flex-column-center" style="margin-top: 30px;">
+    <!--    <div class="flex-column-center" style="margin-top: 30px;">
       <h1>a-table</h1>
       <a-table :columns="rowspanColumns" :data-source="rowspanData" bordered size="middle"
         :scroll="{ x: 'calc(700px + 50%)', y: 240 }" />
-    </div>
+    </div> -->
 
     <!-- el-table -->
     <div class="flex-column-center" style="margin-top: 30px;">
@@ -57,9 +57,9 @@
         </template>
 
         <template #action="{row,text}">
-          <a-button type="primary" @click.native.stop>
+          <ef-button type="primary" @click.native.stop>
             查看详情
-          </a-button>
+          </ef-button>
         </template>
 
         <template #title-op>
@@ -72,7 +72,7 @@
 
       </ef-table>
 
-      <a-button class="margin-top" type="primary" @click="onClickTableCheckbox">checkbox test click</a-button>
+      <ef-button class="margin-top" type="primary" @click="onClickTableCheckbox">checkbox test click</ef-button>
 
     </div>
     <!-- ef-table -->
@@ -91,7 +91,7 @@
           <span v-else style="white-space: nowrap;">{{title}}</span>
         </template>
 
- <!--      <template #loading>
+        <!--      <template #loading>
           加载中
         </template> -->
 
@@ -107,16 +107,16 @@
         </template>
 
         <template #action="{row,text}">
-          <a-button type="primary" @click.native.stop>
+          <ef-button type="primary" @click.native.stop>
             查看详情
-          </a-button>
+          </ef-button>
         </template>
 
         <template #title-op>
           <span style="color: red;">操作</span>
         </template>
 
-<!--        <template #nodata>
+        <!--        <template #nodata>
           <span style="color: red;">无数据。。。</span>
         </template> -->
 
@@ -124,7 +124,7 @@
 
       </ef-table>
 
-      <a-button class="margin-top" type="primary" @click="onClickTableCheckbox">checkbox test click</a-button>
+      <ef-button class="margin-top" type="primary" @click="onClickTableCheckbox">checkbox test click</ef-button>
 
     </div>
     <!-- ef-table -->
@@ -150,7 +150,7 @@
     <div class="flex-column-center" style="margin-top: 30px;">
       <h1>ef-checkbox</h1>
       <ef-checkbox v-model="checked" :disabled="false">check</ef-checkbox>
-      <a-button type="primary" @click="onClickCheckbox">checkbox test click</a-button>
+      <ef-button type="primary" @click="onClickCheckbox">checkbox test click</ef-button>
     </div>
     <!-- ef-checkbox -->
 
@@ -159,7 +159,7 @@
       <h1>ef-checkbox-group</h1>
       <ef-checkbox-group :disabled="false" :options="checkboxGroupOption" v-model="checkboxGroupValue"
         @change="onCheckboxGroupChange"></ef-checkbox-group>
-      <a-button type="primary" @click="onClickCheckboxGroup">checkboxGroup test click</a-button>
+      <ef-button type="primary" @click="onClickCheckboxGroup">checkboxGroup test click</ef-button>
     </div>
     <!-- ef-checkbox-group -->
 
@@ -182,8 +182,19 @@
       <ef-button icon="icon-phone" shape="" @click="handleClickButton">
         button
       </ef-button>
-      <ef-button type="default" icon="icon-phone" shape="circle">
+      <ef-button type="default" icon="icon-phone" shape="circle"></ef-button>
+
+
+      <ef-button type="default" :loading="true" >button
       </ef-button>
+
+      <ef-button type="default" size="small":loading="true" >button
+      </ef-button>
+
+      <ef-button type="default" size="middle" :loading="true" >button
+      </ef-button>
+
+
     </div>
     <!-- ef-button -->
 
@@ -247,9 +258,9 @@
           </template>
 
           <template #action="{row,text}">
-            <a-button type="primary" @click.native.stop>
+            <ef-button type="primary" @click.native.stop>
               查看详情
-            </a-button>
+            </ef-button>
           </template>
 
           <template #title-op>
@@ -274,7 +285,7 @@
 
 
 
-    <a-modal v-model="aModalVisible" title="TITLE">
+    <!--    <a-modal v-model="aModalVisible" title="TITLE">
 
       <ef-table @rowDbclick="onRowDbclick" @rowClick="onRowClick" :dataSource="dataSource" :columns="columns"
         rowKey="key" :showHeader="true" rowClassName="testcolor" headRowClassName="testcolor" table-layout=""
@@ -298,9 +309,9 @@
         </template>
 
         <template #action="{row,text}">
-          <a-button type="primary" @click.native.stop>
+          <ef-button type="primary" @click.native.stop>
             查看详情
-          </a-button>
+          </ef-button>
         </template>
 
         <template #title-op>
@@ -317,7 +328,7 @@
 
 
     </a-modal>
-    <ef-button @click="aModalVisible = !aModalVisible;">toggle aModalVisible</ef-button>
+    <ef-button @click="aModalVisible = !aModalVisible;">toggle aModalVisible</ef-button> -->
 
 
     <!-- ef-button -->
@@ -360,7 +371,7 @@
 
       const columnsV2 = this.$efUtil.genColumns(columsMap);
 
-      console.log("columnsV2",columnsV2)
+      console.log("columnsV2", columnsV2)
 
       const data = [];
       for (let i = 0; i < 100; i++) {
@@ -427,8 +438,8 @@
     methods: {
 
 
-      onMenuChange(key,menu){
-        console.log(key,menu)
+      onMenuChange(key, menu) {
+        console.log(key, menu)
       },
 
       onModalCancel(modalInstance) {

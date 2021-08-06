@@ -8,12 +8,12 @@
       'ef-button-shape-round':shape=='round',
       'ef-button-disabled':$attrs.hasOwnProperty('disabled'),
       'ef-button-loading':loading,
-      'ef-button-size-medium':size=='medium',
+      'ef-button-size-medium':size=='middle',
       'ef-button-size-small':size=='small',
       }">
-    <ef-icon v-if="loading" type="icon-loading" spin color="#FFF"></ef-icon>
-    <ef-icon v-else-if="icon" :type="icon" color="#FFF"></ef-icon>
-    <div style="text-align: center;" :style="{marginLeft:shape=='circel'?'0px':'3px;'}">
+    <ef-icon v-if="loading" :fontSize="fontSize" type="icon-loading" spin color="#FFF"></ef-icon>
+    <ef-icon v-else-if="icon" :fontSize="fontSize" :type="icon" color="#FFF"></ef-icon>
+    <div style="text-align: center;" :style="{marginLeft:shape=='circle'?'0px':'5px'}">
       <slot name="default"></slot>
     </div>
   </button>
@@ -47,6 +47,19 @@
         type: String,
         default: ""
       },
+    },
+    computed: {
+      fontSize() {
+        const fontSizeMap = {
+          "small": "12",
+          "middle": "12"
+        }
+        if (fontSizeMap[this.size]) {
+          return fontSizeMap[this.size];
+        } else {
+          // return "20";
+        }
+      }
     },
     data() {
       return {

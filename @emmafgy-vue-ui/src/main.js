@@ -1,19 +1,19 @@
 import Vue from 'vue'
 import App from './App.vue'
-import {
-  Button,
-  Table,
-  Divider,
-  Icon,
-  Tag,
-  Modal
-} from 'ant-design-vue';
-Vue.use(Button);
-Vue.use(Table);
-Vue.use(Divider);
-Vue.use(Icon);
-Vue.use(Tag);
-Vue.use(Modal);
+// import {
+//   Button,
+//   Table,
+//   Divider,
+//   Icon,
+//   Tag,
+//   Modal
+// } from 'ant-design-vue';
+// Vue.use(Button);
+// Vue.use(Table);
+// Vue.use(Divider);
+// Vue.use(Icon);
+// Vue.use(Tag);
+// Vue.use(Modal);
 
 // import "@/assets/iconfont/iconfont.css";
 // import MyInput from "./lib/components/my-input/main.js";

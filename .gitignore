@@ -1,0 +1,24 @@
+.DS_Store
+@emmafgy-vue-ui/node_modules
+@emmafgy-vue-ui/dist
+
+@emmafgy-vue-ui-vuepress/node_modules
+@emmafgy-vue-ui-vuepress/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

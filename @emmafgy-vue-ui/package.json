@@ -1,13 +1,13 @@
 {
   "main": "./lib/@emmafgy-vue.js",
   "name": "@emmafgy/vue-components",
-  "description": "vue-simple-component demo",
+  "description": "vue2 ui",
   "version": "1.0.50",
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/fuguiyong/vue-simple-component.git"
+    "url": "https://gitee.com/fuguiyong/emmafgy-packages.git"
   },
-  "author": "fuguiyong <fu.guiyong@datasw.com>",
+  "author": "fuguiyong <760720981@qq.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -16,7 +16,6 @@
     "build:theme": "node build/bin/genCssFile && gulp build --gulpfile src/theme/gulpfile.js && cp-cli src/theme/lib lib/theme"
   },
   "dependencies": {
-    "ant-design-vue": "^1.7.5",
     "vue": "^2.5.11"
   },
   "browserslist": [
