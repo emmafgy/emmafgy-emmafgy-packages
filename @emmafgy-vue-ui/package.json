@@ -2,7 +2,7 @@
   "main": "./lib/@emmafgy-vue.js",
   "name": "@emmafgy/vue-components",
   "description": "vue2 ui",
-  "version": "1.0.53",
+  "version": "1.0.54",
   "repository": {
     "type": "git",
     "url": "https://gitee.com/fuguiyong/emmafgy-packages.git"

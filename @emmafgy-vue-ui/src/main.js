@@ -21,14 +21,14 @@ import App from './App.vue'
 
 
 // dev
-// import "./custom-theme.scss";
-// import efComponent from "@/lib/index.js";
+import "./custom-theme.scss";
+import efComponent from "@/lib/index.js";
 // import "@/theme/src/index.scss";
 
 
 // prod
-import efComponent from "../lib/@emmafgy-vue.js";
-import "../lib/theme/index.css";
+// import efComponent from "../lib/@emmafgy-vue.js";
+// import "../lib/theme/index.css";
 
 Vue.use(efComponent);
 

@@ -14,7 +14,9 @@
         <p v-else v-html="message"></p>
       </slot>
 
-      <ef-icon style="margin-left: 15px;cursor: pointer;" color="#cfd2d6" size="mini" type="icon-close" v-if="showClose" @click.native="close"></ef-icon>
+      <ef-icon @mouseenter.native="ifHoverCloseIcon=true" @mouseleave.native="ifHoverCloseIcon=false"
+        style="margin-left: 15px;cursor: pointer;" :color="ifHoverCloseIcon?'#666':'#cfd2d6'" fontSize="16"
+        type="icon-close" v-if="showClose" @click.native="close"></ef-icon>
 
 
     </div>
@@ -34,6 +36,7 @@
   export default {
     data() {
       return {
+        ifHoverCloseIcon: false,
         iconTypeMap: {
           success: "icon-success-fill",
           warn: "icon-prompt-fill1",
