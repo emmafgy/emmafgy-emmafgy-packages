@@ -68,7 +68,7 @@
     computed: {
       muneItemStyle() {
         return {
-          paddingLeft: (this.subLevel * parseInt(menuItemPaddingLeft)) + "px"
+          paddingLeft: ((this.subLevel - 1) * parseInt(menuItemPaddingLeft)) + "px"
         }
       }
     },
