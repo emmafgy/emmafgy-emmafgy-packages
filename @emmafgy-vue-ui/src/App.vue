@@ -155,13 +155,13 @@
       <ef-button type="default" icon="icon-phone" shape="circle"></ef-button>
 
 
-      <ef-button type="default" :loading="true" >button
+      <ef-button type="default" :loading="true">button
       </ef-button>
 
-      <ef-button type="default" size="small":loading="true" >button
+      <ef-button type="default" size="small" :loading="true">button
       </ef-button>
 
-      <ef-button type="default" size="middle" :loading="true" >button
+      <ef-button type="default" size="middle" :loading="true">button
       </ef-button>
 
 
@@ -255,7 +255,7 @@
 
 
 
- 
+
 
     <!-- ef-button -->
     <div class="" style="margin-top: 30px;height: 400px;">
@@ -366,6 +366,16 @@
 
       onMenuChange(key, menu) {
         console.log(key, menu)
+
+
+        // this.$message({
+        //   type: "success",
+        //   dangerouslyUseHTMLString: true,
+        //   message: '<strong>这是 <i>HTML</i> 片段</strong>',
+        //   duration: 3000,
+        //   showClose: true
+        // });
+
       },
 
       onModalCancel(modalInstance) {
@@ -393,7 +403,8 @@
 
         this.$alert({
           title: "我是TITLE",
-          body: "<ef-button>custom componts</ef-button>",
+          maxWidth:500,
+          body: "我是b我是body我是body我是body我是body我是body我是body我是body我是bodyody",
           iconType: "success",
           onConfirm: async () => {
 

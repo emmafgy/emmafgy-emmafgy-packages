@@ -1,7 +1,7 @@
 <template>
   <transition name="msgbox-fade">
     <div v-if="visible" class="ef-alert-wrapper">
-      <div class="inner flex-column-base pos-relative">
+      <div class="inner flex-column-base pos-relative" :style="bodyStyle">
 
         <div class="header flex-base flex-0-0-auto">
           <ef-icon v-show="showIcon" size="middle" :type="iconTypeMap[iconType]" :color="iconColorMap[iconType]">
@@ -55,8 +55,19 @@
       EfIcon,
       EfButton
     },
+    computed: {
+      bodyStyle() {
+        let res = {};
+        if (this.maxWidth) {
+          res.maxWidth = parseInt(this.maxWidth) + "px";
+        }
+        return res;
+      }
+    },
     data() {
       return {
+
+        maxWidth: 600,
         visible: false,
         showMark: true,
         showIcon: true,
