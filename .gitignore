@@ -1,6 +1,7 @@
 .DS_Store
 @emmafgy-vue-ui/node_modules
 @emmafgy-vue-ui/dist
+@emmafgy-vue-ui/lib
 
 @emmafgy-vue-ui-vuepress/node_modules
 @emmafgy-vue-ui-vuepress/dist
