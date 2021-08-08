@@ -14,8 +14,7 @@
           </div>
           <ef-menu :role="'ef-sub-menu-'+ menu.key" @change="onChildChange" :subLevel="subLevel + 1"
             :menuList="menu.children" :isSubMenu="true"
-            :class="{'ef-sub-menu-close':!menu.showSubMenu,'ef-sub-menu-open':menu.showSubMenu}"
-            >
+            :class="{'ef-sub-menu-close':!menu.showSubMenu,'ef-sub-menu-open':menu.showSubMenu}">
           </ef-menu>
           <!-- :class="{'ef-sub-menu-close':!menu.showSubMenu,'ef-sub-menu-open':menu.showSubMenu,}" -->
         </li>
@@ -44,6 +43,10 @@
   export default {
     name: "ef-menu",
     props: {
+      collapse: {
+        type: Boolean,
+        default: false
+      },
       role: {
         type: String,
         default: ""
@@ -118,7 +121,9 @@
 
           if (Array.isArray(p)) {
 
-            let firstParentEl = this.findFirstParent().$el;
+            // let firstParentEl = this.findFirstParent().$el;
+            let firstParentEl = currentKeyObj.firstParent.$el;
+
             for (let i = p.length - 1; i >= 0; i--) {
               let menu = p[i];
 
@@ -194,9 +199,31 @@
           this.$set(menu, "showSubMenu", false);
         }
 
+        // 切换选择状态
         this.$set(menu, "showSubMenu", !menu.showSubMenu);
 
+        // 关闭所有展开菜单 还存在问题
+        // this.collapse && (this.closeAll());
+
         this.openSubMenu(menu.key);
+
+      },
+
+
+      closeAll() {
+
+        const close = (menuList) => {
+
+          menuList.forEach(menu => {
+            if (menu.hasOwnProperty("children")) {
+              this.$set(menu, "showSubMenu", false);
+              close(menu.children);
+            }
+          });
+
+        };
+
+        close(currentKeyObj.cloneMenuList);
 
       },
 
@@ -256,6 +283,7 @@
     created() {
       if (this.subLevel == 1) { // 只有第一个子组件，需要备份menuList，递归子组件需要使用完整的menuList
         currentKeyObj.cloneMenuList = this.menuList;
+        currentKeyObj.firstParent = this;
       }
     }
   }
