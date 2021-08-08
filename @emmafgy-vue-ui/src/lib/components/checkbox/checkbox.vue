@@ -91,7 +91,7 @@
       //   });
       // },
 
-      async test() {
+      test() {
         try {
 
         } catch (e) {

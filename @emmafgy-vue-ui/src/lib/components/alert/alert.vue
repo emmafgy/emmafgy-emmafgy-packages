@@ -135,7 +135,7 @@
         this.showConfirmLoading = true;
       },
 
-      async test() {
+      test() {
         try {
 
         } catch (e) {

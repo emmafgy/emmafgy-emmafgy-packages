@@ -238,7 +238,7 @@
         return null; // 默认路径 parents 为空 未找到
       },
 
-      async test() {
+      test() {
         try {
 
         } catch (e) {

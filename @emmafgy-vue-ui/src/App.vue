@@ -2,36 +2,6 @@
   <div id="app">
 
 
-    <!--   <div class="flex-column-center" style="margin-top: 30px;">
-      <h1>a-table</h1>
-      <a-table :columns="Acolumns" :data-source="Adata" :bordered="false" size="middle" :loading="true">
-        <a slot="name" slot-scope="text">{{ text }}</a>
-        <span slot="customTitle">
-          <a-icon type="smile-o" /> Name
-        </span>
-        <span slot="tags" slot-scope="tags">
-          <a-tag v-for="tag in tags" :key="tag"
-            :color="tag === 'loser' ? 'volcano' : tag.length > 5 ? 'geekblue' : 'green'">
-            {{ tag.toUpperCase() }}
-          </a-tag>
-        </span>
-        <span slot="action" slot-scope="text, record">
-          <a>Invite 一 {{ record.name }}</a>
-          <a-divider type="vertical" />
-          <a>Delete</a>
-          <a-divider type="vertical" />
-          <a class="ant-dropdown-link"> More actions
-            <a-icon type="down" />
-          </a>
-        </span>
-      </a-table>
-    </div> -->
-    <!--    <div class="flex-column-center" style="margin-top: 30px;">
-      <h1>a-table</h1>
-      <a-table :columns="rowspanColumns" :data-source="rowspanData" bordered size="middle"
-        :scroll="{ x: 'calc(700px + 50%)', y: 240 }" />
-    </div> -->
-
     <!-- el-table -->
     <div class="flex-column-center" style="margin-top: 30px;">
       <h1>ef-table</h1>
@@ -285,51 +255,7 @@
 
 
 
-    <!--    <a-modal v-model="aModalVisible" title="TITLE">
-
-      <ef-table @rowDbclick="onRowDbclick" @rowClick="onRowClick" :dataSource="dataSource" :columns="columns"
-        rowKey="key" :showHeader="true" rowClassName="testcolor" headRowClassName="testcolor" table-layout=""
-        :bordered="false" :loading="false" width="100%" height="" :selectedConfig="selectedConfigV2"
-        @checkboxChange="oncheckboxChange" @sortChange="onSortChange" :fixedHeader="true">
-
-        <template #customTitle="{col,title}">
-          <slot v-if="$scopedSlots.nodata" name="nodata"></slot>
-          <span v-else style="white-space: nowrap;">{{title}}</span>
-        </template>
-
-
-        <template #name="{row,text}">
-          solt-{{text}}
-        </template>
-
-        <template #tags="{row,text}">
-          <span v-for="(item,i) of text" :key="i">
-            {{item}},
-          </span>
-        </template>
-
-        <template #action="{row,text}">
-          <ef-button type="primary" @click.native.stop>
-            查看详情
-          </ef-button>
-        </template>
-
-        <template #title-op>
-          <span style="color: red;">操作</span>
-        </template>
-
-        <template #nodata>
-          <span style="color: red;">无数据。。。</span>
-        </template>
-
-        <template #order="{row,text,index}">{{index}}</template>
-
-      </ef-table>
-
-
-    </a-modal>
-    <ef-button @click="aModalVisible = !aModalVisible;">toggle aModalVisible</ef-button> -->
-
+ 
 
     <!-- ef-button -->
     <div class="" style="margin-top: 30px;height: 400px;">

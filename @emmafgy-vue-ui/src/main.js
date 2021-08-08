@@ -19,14 +19,16 @@ import App from './App.vue'
 // import MyInput from "./lib/components/my-input/main.js";
 // import MyInput from "../dist-lib/@emmafgy-vue.js";
 
-import "./custom-theme.scss";
-import efComponent from "@/lib/index.js";
+
+// dev
+// import "./custom-theme.scss";
+// import efComponent from "@/lib/index.js";
 // import "@/theme/src/index.scss";
 
 
-
-// import efComponent from "../lib/@emmafgy-vue.js";
-// import "../lib/theme/index.css";
+// prod
+import efComponent from "../lib/@emmafgy-vue.js";
+import "../lib/theme/index.css";
 
 Vue.use(efComponent);
 

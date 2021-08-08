@@ -77,7 +77,7 @@
 
       // === function ===
 
-      async test() {
+      test() {
         try {
 
         } catch (e) {
