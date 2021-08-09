@@ -418,7 +418,7 @@ export const rowspanColumns = [{
 export const menuList = [{
 		key: "1",
 		label: "menu one",
-		icon: "icon-category",
+		icon: "icon-all-fill",
 		fullRoutePath: "/",
 		children: [{
 				key: "12",
@@ -438,13 +438,13 @@ export const menuList = [{
 	{
 		key: "2",
 		label: "menu two",
-		icon: "icon-category",
+		icon: "icon-all-fill",
 		// customIconClass:"iconfont icon-menu",
 	},
 	{
 		key: "4",
 		label: "menu three",
-		icon: "icon-category",
+		icon: "icon-all-fill",
 		// showSubMenu: true,
 		children: [{
 				key: "5",
@@ -461,7 +461,7 @@ export const menuList = [{
 			{
 				key: "9",
 				label: "menu nine",
-				icon: "icon-category",
+				icon: "icon-all-fill",
 				children: [{
 						key: "10",
 						label: "menu one",
@@ -481,13 +481,13 @@ export const menuList = [{
 	{
 		key: "7",
 		label: "menu two",
-		icon: "icon-category",
+		icon: "icon-all-fill",
 		// customIconClass:"iconfont icon-menu",
 	},
 	{
 		key: "8",
 		label: "menu twomenu twomenu",
-		icon: "icon-category",
+		icon: "icon-all-fill",
 		children: [{
 				key: "18",
 				label: "menu one",

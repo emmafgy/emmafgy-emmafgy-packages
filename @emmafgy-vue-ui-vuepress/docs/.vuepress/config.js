@@ -22,13 +22,14 @@ module.exports = {
 				children: [
 					['/_vue/', "@emmafgy of vue"],
 					['/_vue/icon/', "Icon图标"],
+					['/_vue/button/', "Button按钮"],
+					['/_vue/checkbox/', "Checkbox多选"],
 					['/_vue/table/', "Table表格"],
+					['/_vue/menu/', "Menu菜单"],
 					['/_vue/message/', "Message消息提示"],
 					['/_vue/alert/', "Alert消息提示"],
-					['/_vue/menu/', "Menu菜单"],
-					['/_vue/button/', "Button按钮"],
 					['/_vue/modal/', "Modal模态框"],
-					['/_vue/checkbox/', "Checkbox多选"]
+					['/_vue/css/', "Css"]
 				]
 			}, {
 				title: 'jsontoexcel', // 必要的

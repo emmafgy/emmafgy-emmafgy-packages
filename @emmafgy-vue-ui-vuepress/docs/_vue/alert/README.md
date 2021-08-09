@@ -15,7 +15,7 @@
 		 
 		 this.$alert({
 		   title: "我是TITLE",
-		   maxWidth:500,
+		   width:"500px",
 		   body: "我是Body，我是Body，我是Body，我是Body我是Body，我是Body，我是Body，我是Body我是Body，我是Body，我是Body，我是Body",
 		   iconType: "success",
 		   onConfirm:  () => {
@@ -46,7 +46,7 @@ onConfirm中返回promise可以实现延迟关闭
 	  onAlertPromise(){
 		  this.$alert({
 		    title: "延迟关闭",
-		    maxWidth:500,
+		    width:"400px",
 		    body: "我是返回了Promise，我可以实现延迟关闭。",
 		    iconType: "success",
 		    onConfirm:  () => {
@@ -77,7 +77,7 @@ onConfirm中返回promise可以实现延迟关闭
 	  		  
 	  		  this.$alert({
 	  			title: "延迟关闭",
-	  			maxWidth:500,
+				width:"400px",
 	  			body: "我是返回了Promise，我可以实现延迟关闭。",
 	  			iconType: "success",
 	  			onConfirm: async () => {			
@@ -98,7 +98,7 @@ onConfirm中返回promise可以实现延迟关闭
 ## Options
 | 参数      | 说明          | 类型      | 可选值                           | 默认值  |
 |---------- |-------------- |---------- |--------------------------------  |-------- |
-| maxWidth | 最大宽度 | String|Number | - | 600 |
+| width | 宽度,例：400px or 19% | String | - | 400px |
 | showMark | 是否展示蒙版 | Boolean | - | true |
 | showIcon | 是否展示图标 | Boolean | - | true |
 | iconType | 图标类型 | String | - | error |
@@ -124,7 +124,7 @@ export default {
 		 
 		 this.$alert({
 		   title: "基本使用",
-		   maxWidth:500,
+		   width:"500px",
 		   body: "我是Body，我是Body，我是Body，我是Body我是Body，我是Body，我是Body，我是Body我是Body，我是Body，我是Body，我是Body",
 		   iconType: "success",
 		   onConfirm:  () => {
@@ -140,7 +140,7 @@ export default {
 	  onAlertPromise(){
 		  this.$alert({
 		    title: "延迟关闭",
-		    maxWidth:500,
+		    width:"400px",
 		    body: "我是返回了Promise，我可以实现延迟关闭。",
 		    iconType: "success",
 		    onConfirm:  () => {
@@ -169,7 +169,7 @@ export default {
 		  
 		  this.$alert({
 			title: "延迟关闭",
-			maxWidth:500,
+		    width:"400px",
 			body: "我是返回了Promise，我可以实现延迟关闭。",
 			iconType: "success",
 			onConfirm: async () => {			
