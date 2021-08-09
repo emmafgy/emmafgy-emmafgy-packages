@@ -2,7 +2,7 @@
   <transition name="modalbox-fade">
     <div v-show="visible" class="ef-modal-wrapper">
 
-      <div :style="{width:this.width}" class="inner pos-relative">
+      <div :style="bodyStyle" class="inner pos-relative">
 
         <div class="header flex-base">
           <slot v-if="$scopedSlots.header" name="header"></slot>
@@ -43,6 +43,9 @@
   import EfIcon from "../icon/icon.vue";
   import EfButton from "../button/button.vue";
   import EfMark from "../mark/main.js";
+  import {
+    isPromise
+  } from "@/util/util.js";
   export default {
     name: "ef-modal",
     model: {
@@ -53,9 +56,26 @@
       EfIcon,
       EfButton
     },
+    computed: {
+      bodyStyle() {
+        let res = {};
+        if (this.maxWidth) {
+          res.maxWidth = parseInt(this.maxWidth) + "px";
+        }
+        return res;
+      }
+    },
     props: {
-      width: {
-        type: String,
+      onCancel: {
+        type: Function,
+        default: () => {}
+      },
+      onConfirm: {
+        type: Function,
+        default: () => {}
+      },
+      maxWidth: {
+        type: String | Number,
         default: ""
       },
       visible: {
@@ -122,13 +142,36 @@
       // === event  ===
 
       handleCancel() {
-        this.$emit("cancel", this);
-        this.autoClose && (this.handleClose());
+
+
+        // this.$emit("cancel", this);
+        // this.autoClose && (this.handleClose());
+
+        typeof this.onCancel == "function" && this.onCancel(this);
+        this.handleClose();
+
       },
 
       handleConfirm() {
-        this.$emit("confirm", this);
-        this.autoClose && (this.handleClose());
+        // this.$emit("confirm", this);
+        // this.autoClose && (this.handleClose());
+
+        if (typeof this.onConfirm == "function") {
+
+          let res = this.onConfirm(this);
+          if (isPromise(res)) {
+            this.ifShowConfirmLoading && (this.showConfirmLoading = true);
+            res.then((res) => {
+              this.handleClose();
+            });
+          } else {
+            this.handleClose();
+          }
+
+        } else {
+          this.handleClose();
+        }
+
       },
 
       // === event ===

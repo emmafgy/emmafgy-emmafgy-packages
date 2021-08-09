@@ -200,7 +200,7 @@
     <div class="flex-column-center" style="margin-top: 30px;">
       <h1>ef-modal</h1>
       <!-- <ef-alert></ef-alert> -->
-      <ef-modal @cancel="onModalCancel" @confirm="onModalConfirm" width="" :autoClose="false" v-model="modalVisible"
+      <ef-modal :onCancel="onModalCancel" :onConfirm="onModalConfirm" maxWidth="600"  v-model="modalVisible"
         title="TEST EF-MODAL TITLE?">
         <p>Some contents...</p>
         <p>Some contents...</p>
@@ -382,10 +382,19 @@
 
       },
       onModalConfirm(modalInstance) {
-        modalInstance.showConfirmLoading = true;
-        setTimeout(_ => {
-          modalInstance.handleClose();
-        }, 1000)
+        // modalInstance.showConfirmLoading = true;
+        // setTimeout(_ => {
+        //   modalInstance.handleClose();
+        // }, 1000)
+
+        return new Promise((res, rej) => {
+        				 setTimeout(_ => {
+        				   res()
+        				 }, 1000)
+        });
+
+
+
       },
       handleClickButton() {
         this.buttonLoading = !this.buttonLoading;
