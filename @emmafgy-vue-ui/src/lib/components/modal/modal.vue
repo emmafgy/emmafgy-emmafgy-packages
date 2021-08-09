@@ -126,6 +126,8 @@
         if (newVal) {
           this.showMark && (this.markInstance = EfMark());
           this.hiddenBodyScroll();
+        } else {
+          this.handleClose();
         }
       }
     },
