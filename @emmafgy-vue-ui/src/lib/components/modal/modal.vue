@@ -19,7 +19,7 @@
 
         <div class="footer">
           <slot v-if="$scopedSlots.footer" name="footer"></slot>
-          <template>
+          <template v-else>
             <div class="flex-base">
               <span class="flex-1"></span>
               <ef-button style="min-width: 70px;" @click.native="handleCancel" v-show="showCancelButton" size="small">

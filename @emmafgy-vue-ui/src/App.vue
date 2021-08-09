@@ -200,7 +200,7 @@
     <div class="flex-column-center" style="margin-top: 30px;">
       <h1>ef-modal</h1>
       <!-- <ef-alert></ef-alert> -->
-      <ef-modal :onCancel="onModalCancel" :onConfirm="onModalConfirm" maxWidth="600"  v-model="modalVisible"
+      <ef-modal :onCancel="onModalCancel" :onConfirm="onModalConfirm" width="600px"  v-model="modalVisible"
         title="TEST EF-MODAL TITLE?">
         <p>Some contents...</p>
         <p>Some contents...</p>
