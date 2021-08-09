@@ -59,9 +59,7 @@
     computed: {
       bodyStyle() {
         let res = {};
-        if (this.maxWidth) {
-          res.maxWidth = parseInt(this.maxWidth) + "px";
-        }
+        this.width && (res.width = this.width);
         return res;
       }
     },
@@ -74,7 +72,7 @@
         type: Function,
         default: () => {}
       },
-      maxWidth: {
+      width: {
         type: String | Number,
         default: ""
       },

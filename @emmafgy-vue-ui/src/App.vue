@@ -412,7 +412,7 @@
 
         this.$alert({
           title: "我是TITLE",
-          maxWidth:500,
+          width:"500px",
           body: "我是b我是body我是body我是body我是body我是body我是body我是body我是bodyody",
           iconType: "success",
           onConfirm: async () => {
