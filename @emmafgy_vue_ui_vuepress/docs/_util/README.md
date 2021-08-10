@@ -22,6 +22,23 @@ Util.func();
 
 let util = {};
 
+// 一般用于导出txt文件
+util.export1 = (name, data) => {
+
+	const fakeClick = (obj) => {
+		var ev = document.createEvent('MouseEvents')
+		ev.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null)
+		obj.dispatchEvent(ev)
+	}
+
+	var urlObject = window.URL || window.webkitURL || window
+	var export_blob = new Blob([data])
+	var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a')
+	save_link.href = urlObject.createObjectURL(export_blob)
+	save_link.download = name
+	fakeClick(save_link)
+}
+
 /**
  * 获取 location.search 参数
  * 从问号 (?) 开始的 URL（查询部分）

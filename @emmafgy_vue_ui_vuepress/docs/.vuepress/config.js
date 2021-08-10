@@ -10,7 +10,7 @@ module.exports = {
 		smoothScroll: true,
 		nav: [ // 导航栏配置
 			{
-				text: 'git',
+				text: 'gitee',
 				link: 'https://gitee.com/fuguiyong/emmafgy-packages.git'
 			}
 		],
