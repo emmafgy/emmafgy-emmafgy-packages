@@ -10,8 +10,8 @@ module.exports = {
 		smoothScroll: true,
 		nav: [ // 导航栏配置
 			{
-				text: 'github',
-				link: 'https://gitee.com/fuguiyong/vue-simple-component.git'
+				text: 'git',
+				link: 'https://gitee.com/fuguiyong/emmafgy-packages.git'
 			}
 		],
 		sidebar: [{
