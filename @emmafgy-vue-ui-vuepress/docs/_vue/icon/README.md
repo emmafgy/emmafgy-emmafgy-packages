@@ -5,17 +5,17 @@
 ## 基本使用
 
 <div class="view-container">
-	<ef-icon type="icon-password1" size="middle"></ef-icon>
+	<ef-icon type="icon-product1" size="middle"></ef-icon>
 	<ef-icon class="margin-left" type="icon-loading" size="middle" spin></ef-icon>
-	<ef-icon class="margin-left" type="icon-password1" color="red" fontSize="40"></ef-icon>
+	<ef-icon class="margin-left" type="icon-favorites-fill" color="red" fontSize="40"></ef-icon>
 </div>
 
 ::: details 点击查看代码
 
 ```vue
-<ef-icon type="icon-password1" size="middle"></ef-icon>
-<ef-icon class="margin-left" type="icon-loading" size="middle" spin></ef-icon>
-<ef-icon class="margin-left" type="icon-password1" size="middle" color="red"></ef-icon>
+	<ef-icon type="icon-product1" size="middle"></ef-icon>
+	<ef-icon class="margin-left" type="icon-loading" size="middle" spin></ef-icon>
+	<ef-icon class="margin-left" type="icon-favorites-fill" color="red" fontSize="40"></ef-icon>
 ```
 :::
 

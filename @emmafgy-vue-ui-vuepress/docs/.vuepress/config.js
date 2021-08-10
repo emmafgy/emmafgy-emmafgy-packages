@@ -20,7 +20,9 @@ module.exports = {
 				// collapsable: true, // 可选的, 默认值是 true,
 				sidebarDepth: 1, // 可选的, 默认值是 1
 				children: [
-					['/_vue/', "@emmafgy of vue"],
+					['/_vue/', "@emmafgy UI"],
+					['/_vue/installAndUse/', "安装使用"],
+					['/_vue/customTheme/', "自定义主题"],
 					['/_vue/icon/', "Icon图标"],
 					['/_vue/button/', "Button按钮"],
 					['/_vue/checkbox/', "Checkbox多选"],
@@ -29,7 +31,7 @@ module.exports = {
 					['/_vue/message/', "Message消息提示"],
 					['/_vue/alert/', "Alert消息提示"],
 					['/_vue/modal/', "Modal模态框"],
-					['/_vue/css/', "Css"]
+					['/_vue/css/', "CSS"]
 				]
 			}, {
 				title: 'jsontoexcel', // 必要的
