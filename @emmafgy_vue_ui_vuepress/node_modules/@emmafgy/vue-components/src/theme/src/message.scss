@@ -1,0 +1,49 @@
+  @import "../common/css/common.scss";
+
+  .ef-message-fade-enter,
+  .ef-message-fade-leave-active {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+  }
+
+
+.ef-message{
+      // min-width: 380px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 1px solid #ebeef5;
+      position: fixed;
+      left: 50%;
+      top: 20px;
+      transform: translateX(-50%);
+      background-color: #edf2fc;
+      transition: opacity .3s,transform .4s,top .4s;
+      overflow: hidden;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 12px $box-shadow-color;
+
+      &.ef-message-success{
+        color: $message-success-color;
+        background-color: $message-success-background-color;
+        border: 1px solid $message-success-border-color;
+      }
+
+      &.ef-message-warn{
+        color: $message-warn-color;
+        background-color: $message-warn-background-color;
+        border: 1px solid $message-warn-border-color;
+      }
+
+      &.ef-message-error{
+        color: $message-error-color;
+        background-color: $message-error-background-color;
+        border: 1px solid $message-error-border-color;
+      }
+
+      p{
+        margin: 0 ;
+      }
+
+}

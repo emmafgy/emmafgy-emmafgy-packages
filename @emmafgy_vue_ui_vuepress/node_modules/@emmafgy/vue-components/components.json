@@ -1,0 +1,15 @@
+{
+  "checkbox": "./src/lib/components/checkbox/main.js",
+  "checkboxGroup": "./src/lib/components/checkboxGroup/main.js",
+  "icon": "./src/lib/components/icon/main.js",
+  "loading": "./src/lib/components/loading/main.js",
+  "table": "./src/lib/components/table/main.js",
+  "triangle": "./src/lib/components/triangle/main.js",
+  "button": "./src/lib/components/button/main.js",
+  "message": "./src/lib/components/message/main.js",
+  "alert": "./src/lib/components/message/main.js",
+  "mark": "./src/lib/components/mark/main.js",
+  "modal": "./src/lib/components/modal/main.js",
+  "menu": "./src/lib/components/menu/main.js",
+  "util": "./src/lib/components/util/index.js"
+}
