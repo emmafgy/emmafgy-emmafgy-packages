@@ -4,7 +4,6 @@
 @emmafgy-vue-ui/lib
 
 @emmafgy-vue-ui-vuepress/node_modules
-@emmafgy-vue-ui-vuepress/dist
 
 # local env files
 .env.local
