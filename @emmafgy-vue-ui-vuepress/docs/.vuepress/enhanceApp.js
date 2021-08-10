@@ -1,4 +1,4 @@
-import EFUI from "@emmafgy/vue-components";
+// import EFUI from "@emmafgy/vue-components";
 import "@emmafgy/vue-components/lib/theme/index.css";
 // import "@emmafgy/vue-components/src/theme/src/index.scss";
 import "./common/common.scss";
@@ -15,8 +15,17 @@ export default ({
 	isServer // 当前应用配置是处于 服务端渲染 或 客户端
 }) => {
 	// ...做一些其他的应用级别的优化
+
+	// Vue.use(EFUI);
 	
-	Vue.use(EFUI);
-	
-	
+	// 解决build问题
+	Vue.mixin({
+		mounted() {
+			import('@emmafgy/vue-components').then(function(m) {
+				Vue.use(m.default)
+			})
+		},
+	})
+
+
 }
