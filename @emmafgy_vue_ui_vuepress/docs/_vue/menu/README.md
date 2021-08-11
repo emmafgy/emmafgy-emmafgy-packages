@@ -25,18 +25,18 @@
 				{
 						key: "1",
 						label: "menu one",
-						icon: "icon-category",
+						icon: "icon-all-fill",
 						fullRoutePath: "/",
 						children: [{
 								key: "12",
 								label: "menu one",
-								// icon: "icon-category",
+								// icon: "icon-all-fill",
 								// customIconClass:"iconfont icon-menu",
 							},
 							{
 								key: "13",
 								label: "menu two",
-								// icon: "icon-category",
+								// icon: "icon-all-fill",
 								// customIconClass:"iconfont icon-menu",
 							},
 						]
@@ -45,40 +45,40 @@
 					{
 						key: "2",
 						label: "menu two",
-						icon: "icon-category",
+						icon: "icon-all-fill",
 						// customIconClass:"iconfont icon-menu",
 					},
 					{
 						key: "4",
 						label: "menu three",
-						icon: "icon-category",
+						icon: "icon-all-fill",
 						// showSubMenu: true,
 						children: [{
 								key: "5",
 								label: "menu one",
-								// icon: "icon-category",
+								// icon: "icon-all-fill",
 								// customIconClass:"iconfont icon-menu",
 							},
 							{
 								key: "6",
 								label: "menu two",
-								// icon: "icon-category",
+								// icon: "icon-all-fill",
 								// customIconClass:"iconfont icon-menu",
 							},
 							{
 								key: "9",
 								label: "menu nine",
-								icon: "icon-category",
+								icon: "icon-all-fill",
 								children: [{
 										key: "10",
 										label: "menu one",
-										// icon: "icon-category",
+										// icon: "icon-all-fill",
 										// customIconClass:"iconfont icon-menu",
 									},
 									{
 										key: "11",
 										label: "menu two",
-										// icon: "icon-category",
+										// icon: "icon-all-fill",
 										// customIconClass:"iconfont icon-menu",
 									},
 								]
@@ -88,23 +88,23 @@
 					{
 						key: "7",
 						label: "menu two",
-						icon: "icon-category",
+						icon: "icon-all-fill",
 						// customIconClass:"iconfont icon-menu",
 					},
 					{
 						key: "8",
 						label: "menu twomenu twomenu",
-						icon: "icon-category",
+						icon: "icon-all-fill",
 						children: [{
 								key: "18",
 								label: "menu one",
-								// icon: "icon-category",
+								// icon: "icon-all-fill",
 								// customIconClass:"iconfont icon-menu",
 							},
 							{
 								key: "19",
 								label: "menu two",
-								// icon: "icon-category",
+								// icon: "icon-all-fill",
 								// customIconClass:"iconfont icon-menu",
 							},
 						]
