@@ -43,11 +43,11 @@
     messageSuccessColor,
     messageErrorColor,
     messageWarnColor
-  } from "@/theme/common/css/common.scss";
+  } from "../../../theme/common/css/common.scss";
 
   import {
     isPromise
-  } from "@/util/util.js";
+  } from "../../../util/util.js";
 
   export default {
     name: "ef-alert",

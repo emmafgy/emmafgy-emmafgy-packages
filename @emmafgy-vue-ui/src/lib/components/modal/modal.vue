@@ -45,7 +45,7 @@
   import EfMark from "../mark/main.js";
   import {
     isPromise
-  } from "@/util/util.js";
+  } from "../../../util/util.js";
   export default {
     name: "ef-modal",
     model: {

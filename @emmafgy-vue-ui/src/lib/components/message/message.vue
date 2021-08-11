@@ -31,7 +31,7 @@
     messageSuccessColor,
     messageErrorColor,
     messageWarnColor
-  } from "@/theme/common/css/common.scss";
+  } from "../../../theme/common/css/common.scss";
 
   export default {
     data() {

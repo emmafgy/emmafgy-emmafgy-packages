@@ -35,11 +35,11 @@
   import currentKeyObj from "./currentKey.js";
   import {
     menuItemPaddingLeft
-  } from "@/theme/src/menu.scss";
+  } from "../../../theme/src/menu.scss";
   import {
     getNoneStyle,
     getNearEle
-  } from "@/util/util.js";
+  } from "../../../util/util.js";
   export default {
     name: "ef-menu",
     props: {
