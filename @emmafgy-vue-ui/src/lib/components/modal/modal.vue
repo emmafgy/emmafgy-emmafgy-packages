@@ -4,7 +4,7 @@
 
       <div :style="bodyStyle" class="inner pos-relative">
 
-        <div class="header flex-base">
+        <div v-if="showHeader" class="header flex-base">
           <slot v-if="$scopedSlots.header" name="header"></slot>
           <span v-else>{{title}}</span>
           <span class="flex-1"></span>
@@ -17,7 +17,7 @@
           <slot></slot>
         </div>
 
-        <div class="footer">
+        <div v-if="showFooter" class="footer">
           <slot v-if="$scopedSlots.footer" name="footer"></slot>
           <template v-else>
             <div class="flex-base">
