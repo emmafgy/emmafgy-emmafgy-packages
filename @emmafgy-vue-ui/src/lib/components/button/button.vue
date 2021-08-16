@@ -56,16 +56,18 @@
       fontSize() {
         const fontSizeMap = {
           "small": "14",
-          "middle": "15"
+          "middle": "14"
         }
-        
+
         if (this.iconFontSize) {
           return parseInt(this.iconFontSize);
         }
-        
+
         if (fontSizeMap[this.size]) {
           return fontSizeMap[this.size];
-        } 
+        }
+
+        return "14";
 
       }
     },

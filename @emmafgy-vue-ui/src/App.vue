@@ -106,6 +106,8 @@
       <h1>ef-cion</h1>
       <ef-icon type="icon-loading" spin color="#aaaaff"></ef-icon>
       <ef-icon type="icon-phone" size="small" fontSize="50"></ef-icon>
+      <ef-icon type="icon-phone" size="mini" ></ef-icon>
+      <ef-icon type="icon-phone" ></ef-icon>
     </div>
     <!-- ef-icon -->
 
