@@ -149,7 +149,7 @@
       <ef-button size="small" type="primary" :loading="buttonLoading">
         button
       </ef-button>
-      <ef-button icon="icon-phone" shape="" @click="handleClickButton">
+      <ef-button size="middle" iconFontSize="20" icon="icon-phone" shape="" @click="handleClickButton">
         button
       </ef-button>
       <ef-button type="default" icon="icon-phone" shape="circle"></ef-button>

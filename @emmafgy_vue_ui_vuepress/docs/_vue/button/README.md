@@ -161,6 +161,7 @@
 |---------- |-------------- |---------- |--------------------------------  |-------- |
 | type | 按钮类型 | String | primary,danger | - |
 | icon | 按钮图标 | String | 参见Icon图标组件 | - |
+| iconFontSize | 按钮图标fontSize | String,Number | 对应Icon图标组件fontSize属性 | - |
 | shape | 按钮形状 | String | circle，round | - |
 | loading | loading | Boolean | - | false |
 | size | String | middle，small | - | - |

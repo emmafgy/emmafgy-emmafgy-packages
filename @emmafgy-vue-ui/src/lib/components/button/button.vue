@@ -27,6 +27,10 @@
       EfIcon
     },
     props: {
+      iconFontSize: {
+        type: Number | String,
+        default: ""
+      },
       type: {
         type: String,
         default: "default"
@@ -51,14 +55,18 @@
     computed: {
       fontSize() {
         const fontSizeMap = {
-          "small": "12",
-          "middle": "12"
+          "small": "14",
+          "middle": "15"
         }
+        
+        if (this.iconFontSize) {
+          return parseInt(this.iconFontSize);
+        }
+        
         if (fontSizeMap[this.size]) {
           return fontSizeMap[this.size];
-        } else {
-          // return "20";
-        }
+        } 
+
       }
     },
     data() {

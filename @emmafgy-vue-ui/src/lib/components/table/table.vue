@@ -309,8 +309,34 @@
         let sortArry = ["asc", "desc", "unset"]; // 切换顺序
         let index = sortArry.indexOf(sort);
         let nextIndex = (index + 1) > sortArry.length - 1 ? 0 : index + 1;
+        this.cancelAllSortColumns(); // 选取消所有
         col.sort = sortArry[nextIndex];
         this.$emit("sortChange", col.sort, col);
+      },
+
+      // 取消所有排序
+      cancelAllSortColumns() {
+        if (this.fixedLeftHeaders[0] && Array.isArray(this.fixedLeftHeaders[0])) {
+          this.fixedLeftHeaders[0].forEach(item => {
+            if (item.hasOwnProperty("sort")) {
+              item.sort = "unset";
+            }
+          })
+        }
+        if (this.fixedRightHeaders[0] && Array.isArray(this.fixedRightHeaders[0])) {
+          this.fixedRightHeaders[0].forEach(item => {
+            if (item.hasOwnProperty("sort")) {
+              item.sort = "unset";
+            }
+          })
+        }
+        if (this.orderHeaders[0] && Array.isArray(this.orderHeaders[0])) {
+          this.orderHeaders[0].forEach(item => {
+            if (item.hasOwnProperty("sort")) {
+              item.sort = "unset";
+            }
+          })
+        }
       },
 
       // 全选事件
@@ -634,8 +660,8 @@
               this.$refs["ef-table-right-body"].style.overflowY = "scroll";
             }
           }
-          
-          
+
+
           this.ifMounted = true; // 渲染完毕 ，打开nodata渲染条件
 
 
