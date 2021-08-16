@@ -17,6 +17,6 @@
     "vuepress": "^1.8.2"
   },
   "dependencies": {
-    "@emmafgy/vue-components": "^1.0.64"
+    "@emmafgy/vue-components": "^1.0.65"
   }
 }
