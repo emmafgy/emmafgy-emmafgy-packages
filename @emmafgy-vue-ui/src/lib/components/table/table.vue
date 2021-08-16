@@ -1,5 +1,5 @@
 <template>
-  <div id="ef-table-conainer" :style="tableContainerStyle"
+  <div class="ef-table-conainer" :style="tableContainerStyle"
     :class="{'ef-table-no-data':dataSource.length < 1,'ef-table-bordered':bordered}">
 
     <!-- table-fixed-left -->

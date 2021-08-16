@@ -6,7 +6,7 @@
 
 
 
- #ef-table-conainer {
+ .ef-table-conainer {
 
     box-sizing: border-box;
     margin: 0;
@@ -20,6 +20,7 @@
     position: relative;
     clear: both;
     overflow: hidden;
+    background-color: #FFF;
     // overflow: auto;
     // overflow: overlay;
 
@@ -203,7 +204,7 @@
           .loading-text{
             color: $primary-color;
           }
-          
+
       }
 
       table {
