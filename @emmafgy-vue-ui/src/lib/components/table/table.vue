@@ -82,7 +82,7 @@
       <!-- loading -->
 
       <!-- nodata -->
-      <div class="ef-spin-container flex-center" v-show="ifMounted && dataSource.length<1" ref="ef-table-body-nodata">
+      <div class="ef-spin-container flex-center" v-show="ifMounted && !loading && dataSource.length<1" ref="ef-table-body-nodata">
         <slot v-if="$scopedSlots.nodata" name="nodata"></slot>
         <span v-else>暂无数据</span>
       </div>
