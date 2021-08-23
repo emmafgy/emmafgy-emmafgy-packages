@@ -1,6 +1,17 @@
 let util = {};
 
 
+// 复制
+util.copy = (text) => {
+	var textareaEl = document.createElement('textarea');
+	textareaEl.setAttribute('readonly', 'readonly'); // 防止手机上弹出软键盘
+	textareaEl.value = text;
+	document.body.appendChild(textareaEl);
+	textareaEl.select();
+	var res = document.execCommand('copy');
+	document.body.removeChild(textareaEl);
+	return res;
+}
 
 // 一般用于导出txt文件
 util.export1 = (name, data) => {
